@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - FastEnglishDemo</title>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:wght@300&amp;family=Ubuntu:wght@500&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="box">
+  <div class="top">
+    <div class="buttom">
+      <div class="setting"></div>
+      <div class="restart"> </div>
+      <div class="start"></div>
+      <div class="stop"></div>
+    </div>
+    <div class="vocabulary"> 
+      <div class="practiceVocal"></div>
+    </div>
+    <div class="score"> 
+      <div class="name"> SCORE：</div>
+      <div class="number">0</div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="vocal">
+      <div class="v v1"></div>
+      <div class="v v2"></div>
+      <div class="v v3"></div>
+      <div class="v v4"></div>
+      <div class="v v5"></div>
+      <div class="v v6"></div>
+      <div class="v v7"></div>
+      <div class="v v8"></div>
+    </div>
+    <div class="timebar">
+      <div class="timecals"></div>
+    </div>
+  </div>
+  <div class="shadow"></div>
+  <div class="settingView"> 
+    <div class="settingTitle">SETTING</div>
+    <div class="settingContent">
+      <div class="settingTimer">
+        <div class="settingName">Time</div>
+        <Input class="timeInput" value="60" oninput="if(value&gt;600)value=600"></Input>
+        <div class="arrow">
+          <div class="arrowUp timeUp"></div>
+          <div class="arrowDown timeDown"></div>
+        </div>
+      </div>
+      <div class="settingClass"> 
+        <div class="settingName">Class</div>
+        <Input class="classInput" value="1" oninput="if(value&gt;30)value=30"></Input>
+        <div class="arrow">
+          <div class="arrowUp classUp"></div>
+          <div class="arrowDown classDown"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,404 @@
+* {
+  position: relative;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #EDE7E3;
+}
+
+.box {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1600px;
+  height: 900px;
+  border-radius: 20px;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.buttom {
+  width: 25%;
+  height: 100;
+  display: flex;
+  justify-content: space-around;
+}
+
+.setting {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(https://image.flaticon.com/icons/svg/2099/2099058.svg);
+  background-size: cover;
+  background-size: 85%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.setting:hover {
+  background-size: 95%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.restart {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(https://image.flaticon.com/icons/svg/2/2046.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.restart:hover {
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.start {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(https://image.flaticon.com/icons/svg/18/18674.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.start:hover {
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stop {
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url(https://image.flaticon.com/icons/svg/64/64485.svg);
+  background-size: 70%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.stop:hover {
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.vocabulary {
+  width: 50%;
+  height: 100%;
+}
+
+.practiceVocal {
+  width: 80%;
+  height: 70%;
+  top: 50%;
+  left: 55%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 20px;
+  background-color: #FFA62B;
+  font-size: 60px;
+}
+
+.score {
+  width: 30%;
+  height: 100%;
+  font-size: 40px;
+  text-align: left;
+  line-height: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.name {
+  width: 50%;
+  height: 100%;
+  left: 40px;
+  text-align: right;
+}
+
+.number {
+  width: 33.3333333333%;
+  height: 100%;
+  text-align: left;
+}
+
+.content {
+  width: 100%;
+  height: 800px;
+  background-color: #489FB5;
+  border-radius: 20px;
+}
+
+.board {
+  width: 90%;
+  height: 87.5%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.vocal {
+  left: 50%;
+  transform: translateX(-50%);
+  width: 98%;
+  height: 87.5%;
+  display: flex;
+  align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.v {
+  flex: 1;
+  width: 24%;
+  min-width: 24%;
+  max-width: 24%;
+  height: 300px;
+  border-radius: 20px;
+  background-color: #EDE7E3;
+}
+
+.v1{
+ background-image: url();
+ background-position: center;
+ background-size: 120%;
+ background-repeat: no-repeat;
+}
+
+.v2{
+  background-image: url();
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+.v3{
+  background-image: url();
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+.v4{
+  background-image: url();
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+.v5{
+  background-image: url();
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+.v6{
+  background-image: url();
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+.v7{
+  background-image: url();
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+.v8{
+  background-image: url();
+  background-position: center;
+  background-size: 120%;
+  background-repeat: no-repeat;
+}
+
+  
+
+.timebar {
+  width: 500px;
+  height: 80px;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #EDE7E3;
+  border-radius: 20px;
+}
+
+.timecals {
+  width: 100%;
+  height: 100%;
+  background-color: #16697A;
+  border-radius: 20px;
+}
+
+.settingView {
+  position: absolute;
+  width: 600px;
+  height: 700px;
+  background-color: #49A4BB;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 30px;
+}
+
+.settingTitle {
+  width: 100%;
+  height: 20%;
+  text-align: center;
+  line-height: 200px;
+  font-size: 80px;
+  color: #EDE7E3;
+}
+
+.settingContent {
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.settingTimer {
+  width: 80%;
+  height: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+}
+
+.settingClass {
+  width: 80%;
+  height: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+}
+
+.settingName {
+  width: 100px;
+  height: 100px;
+  font-size: 60px;
+  text-align: center;
+  line-height: 100px;
+  color: #EDE7E3;
+}
+
+.timerCount {
+  width: 100px;
+  height: 100px;
+  font-size: 60px;
+  text-align: right;
+  line-height: 100px;
+  color: #EDE7E3;
+}
+
+.timeInput {
+  width: 100px;
+  height: 80px;
+  left: 30px;
+  top: 10px;
+  font-size: 60px;
+  text-align: right;
+  background-color: #49A4BB;
+  border: 0px;
+  color: #EDE7E3;
+}
+
+.classCount {
+  width: 100px;
+  height: 100px;
+  font-size: 60px;
+  text-align: right;
+  line-height: 100px;
+  color: #EDE7E3;
+}
+
+.classInput {
+  width: 100px;
+  height: 80px;
+  left: 30px;
+  top: 10px;
+  font-size: 60px;
+  text-align: right;
+  background-color: #49A4BB;
+  border: 0px;
+  color: #EDE7E3;
+}
+
+.arrow {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.arrow .arrowUp {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://i.imgur.com/2hTaHWP.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50%;
+  transform: rotate(-180deg);
+}
+.arrow .arrowUp:hover {
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.arrow .arrowDown {
+  width: 100%;
+  height: 50%;
+  background-image: url(https://i.imgur.com/2hTaHWP.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  fill: #16697A;
+  background-size: 50%;
+}
+.arrow .arrowDown:hover {
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.wordSize {
+  font-size: 60px;
+}
+
+.shadow {
+  position: absolute;
+  width: 1600px;
+  height: 900px;
+  top: 0px;
+  background-color: #929292;
+  border-radius: 20px;
+  opacity: 0.78;
+}
