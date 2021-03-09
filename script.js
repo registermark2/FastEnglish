@@ -56,6 +56,10 @@ $(function() {
       $(".timecals").css("width",value+"%");
       value=value-reduceTime;
       console.log(value);
+      if (value<0){
+        alert("時間到!!!!");
+        restart()
+      }
     };
 
 
@@ -68,7 +72,7 @@ $(function() {
       for(var i =0;i<limit;i++){
           arr.push(i);
       }
-      // console.log("arr content:"+arr);
+      console.log("arr content:"+arr);
 
 
       var result = [ ];
