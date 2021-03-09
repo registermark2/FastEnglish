@@ -180,61 +180,64 @@ body, html {
   height: 300px;
   border-radius: 20px;
   background-color: #EDE7E3;
+  background-size: 350px 300px;;
+  /* background-size: ; */
 }
 
 .v1{
  background-image: url();
  background-position: center;
- background-size: 120%;
+ /* background-size: 120%; */
  background-repeat: no-repeat;
+
 }
 
 .v2{
   background-image: url();
   background-position: center;
-  background-size: 120%;
+  /* background-size: 120%; */
   background-repeat: no-repeat;
 }
 
 .v3{
   background-image: url();
   background-position: center;
-  background-size: 120%;
+  /* background-size: 120%; */
   background-repeat: no-repeat;
 }
 
 .v4{
   background-image: url();
   background-position: center;
-  background-size: 120%;
+  /* background-size: 120%; */
   background-repeat: no-repeat;
 }
 
 .v5{
   background-image: url();
   background-position: center;
-  background-size: 120%;
+  /* background-size: 120%; */
   background-repeat: no-repeat;
 }
 
 .v6{
   background-image: url();
   background-position: center;
-  background-size: 120%;
+  /* background-size: 120%; */
   background-repeat: no-repeat;
 }
 
 .v7{
   background-image: url();
   background-position: center;
-  background-size: 120%;
+  /* background-size: 120%; */
   background-repeat: no-repeat;
 }
 
 .v8{
   background-image: url();
   background-position: center;
-  background-size: 120%;
+  /* background-size: 120%; */
   background-repeat: no-repeat;
 }
 
