@@ -189,7 +189,6 @@ body, html {
  background-position: center;
  /* background-size: 120%; */
  background-repeat: no-repeat;
-
 }
 
 .v2{
@@ -404,4 +403,9 @@ body, html {
   background-color: #929292;
   border-radius: 20px;
   opacity: 0.78;
+}
+
+
+.errorChangeColor{
+  filter: invert(14%) sepia(69%) saturate(7492%) hue-rotate(343deg) brightness(102%) contrast(110%);
 }

@@ -1,36 +1,3 @@
-// var value = 70;
-// $(".timecals").css("width",value+"%");
-// var timebarWidth = 500;
-// $.ajax({
-//   url: "data_name_new.json",
-//   type: "GET",
-//   dataType: "json",
-//   success: function(Jdata) {
-//     // alert("SUCCESS!!!");
-//     console.log(Jdata[0][0]['path']);
-//     var classNumber =0;
-//     var getArray = 0
-//     console.log("show pic :"+Jdata[classNumber][getArray]['path'])
-
-//     // $.each(Jdata[0], function(index,val) {
-//     //   console.log('index='+index);
-
-//     // }); 
-    
-
-//     var test ="."+"//course//1/August.jpg";
-//     // $('.v1').css("background-image","url("+test+")");
-//     // console.log(Jdata[1][0]);
-//   },
-  
-//   error: function() {
-//     alert("ERROR!!!");
-//   }
-// });
-
-
-
-
 
 
 $(function() {
@@ -43,8 +10,6 @@ $(function() {
     var score = 0;
     var controlStart=0;
     
-
-
 
 // cal timebar reduce time
     function cals(){
@@ -113,24 +78,7 @@ $(function() {
           var classNumber = $('.classInput').val(); 
           classNumber = classNumber-1;
           
-          
-          // console.log("classNumber:"+classNumber);
-          // console.log("減一後的長度:"+Jdata[classNumber].length);
-          // getArray = randomNumber(Jdata[classNumber].length);
-          // console.log("getArray"+getArray);
-        
 
-          // for(let i=0;i<Jdata[0].length;i++){
-            
-          //   $('.v1').css("background-image","url("+"."+Jdata[0][getArray[0]]+")");
-          //   $('.v2').css("background-image","url("+"."+Jdata[0][getArray[1]]+")");
-          //   $('.v3').css("background-image","url("+"."+Jdata[0][getArray[2]]+")");
-          //   $('.v4').css("background-image","url("+"."+Jdata[0][getArray[3]]+")");
-          //   $('.v5').css("background-image","url("+"."+Jdata[0][getArray[4]]+")");
-          //   $('.v6').css("background-image","url("+"."+Jdata[0][getArray[5]]+")");
-          //   $('.v7').css("background-image","url("+"."+Jdata[0][getArray[6]]+")");
-          //   $('.v8').css("background-image","url("+"."+Jdata[0][getArray[7]]+")");
-          // }
 
 ///////////////////////////////
           count=0;//每次都要歸0不然重複壓會往上跑
@@ -288,72 +236,113 @@ $(function() {
       if(testWordNumber==testWordPic[0]){
         console.log("Good")
         score = score+10;
-        $('.number').text(score);
         start();
+        
+      }else{
+        console.log("Bad")
+        score = score-10;
+        $('.v1').css("background-image","url()");
       }
+      $('.number').text(score);
     }
     function checkScore2(){
       console.log(testWordNumber+" "+testWordPic[1])
       if(testWordNumber==testWordPic[1]){
         console.log("Good")
         score = score+10;
-        $('.number').text(score);
         start();
+        
+      }else{
+        console.log("Bad")
+        score = score-10;
+        $('.v2').css("background-image","url()");
       }
+      $('.number').text(score);
     }
     function checkScore3(){
       console.log(testWordNumber+" "+testWordPic[2])
       if(testWordNumber==testWordPic[2]){
         console.log("Good")
         score = score+10;
-        $('.number').text(score);
         start();
+        
+      }else{
+        console.log("Bad")
+        score = score-10;
+        $('.v3').css("background-image","url()");
       }
+      $('.number').text(score);
     }
     function checkScore4(){
       console.log(testWordNumber+" "+testWordPic[3])
       if(testWordNumber==testWordPic[3]){
         console.log("Good")
         score = score+10;
-        $('.number').text(score);
         start();
+        
+      }else{
+        console.log("Bad")
+        score = score-10;
+        $('.v4').css("background-image","url()");
       }
+      $('.number').text(score);
     }
     function checkScore5(){
       console.log(testWordNumber+" "+testWordPic[4])
       if(testWordNumber==testWordPic[4]){
         console.log("Good")
         score = score+10;
-        $('.number').text(score);
         start();
+        
+      }else{
+        console.log("Bad")
+        score = score-10;
+        $('.v5').css("background-image","url()");
       }
+      $('.number').text(score);
     }
     function checkScore6(){
       console.log(testWordNumber+" "+testWordPic[5])
       if(testWordNumber==testWordPic[5]){
         console.log("Good")
         score = score+10;
-        $('.number').text(score);
         start();
+        
+      }else{
+        console.log("Bad")
+        score = score-10;
+        $('.v6').css("background-image","url()");
       }
+      $('.number').text(score);
     }
     function checkScore7(){
       console.log(testWordNumber+" "+testWordPic[6])
       if(testWordNumber==testWordPic[6]){
         console.log("Good")
         score = score+10;
-        $('.number').text(score);
         start();
+       
+      }else{
+        console.log("Bad")
+        score = score-10;
+        $('.v7').css("background-image","url()");
       }
+      $('.number').text(score);
     }
     function checkScore8(){
       console.log(testWordNumber+" "+testWordPic[7])
       if(testWordNumber==testWordPic[7]){
         console.log("Good")
         score = score+10;
-        $('.number').text(score);
         start();
+        
+      }else{
+        console.log("Bad")
+        score = score-10;
+        $('.v8').css("background-image","url()");
       }
+      $('.number').text(score);
+
     }
 /////////////////////////////////////////////  
   
