@@ -229,8 +229,8 @@ $(function() {
 
 
 ///////////////////////////////////////////
-    // var corsnd = new Audio("sound/short_videoplayback.wav");
-    var corsnd = new Audio("http://data.huiyi8.com/2017/gha/03/17/1702.mp3");
+    var corsnd = new Audio("sound/short_videoplayback.wav");
+    // var corsnd = new Audio("http://data.huiyi8.com/2017/gha/03/17/1702.mp3");
     var errsnd = new Audio("sound/short_error.wav");
 
 
