@@ -15,8 +15,10 @@ body, html {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  width: 1600px;
-  height: 900px;
+  /* width: 1600px;
+  height: 900px; */
+  width: 1400px;
+  height: 800px; 
   border-radius: 20px;
 }
 

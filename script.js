@@ -229,6 +229,10 @@ $(function() {
 
 
 ///////////////////////////////////////////
+    var corsnd = new Audio("sound/short_videoplayback.wav");
+    var errsnd = new Audio("sound/short_error.wav");
+
+
     function checkScore1(){
       // console.log(1);
       // console.log("testWordPic:"+testWordPic[0]);
@@ -236,11 +240,12 @@ $(function() {
       if(testWordNumber==testWordPic[0]){
         console.log("Good")
         score = score+10;
+        corsnd.play();
         start();
-        
       }else{
         console.log("Bad")
         score = score-10;
+        errsnd.play();
         $('.v1').css("background-image","url()");
       }
       $('.number').text(score);
@@ -250,11 +255,14 @@ $(function() {
       if(testWordNumber==testWordPic[1]){
         console.log("Good")
         score = score+10;
+        corsnd.play();
         start();
-        
+
+
       }else{
         console.log("Bad")
         score = score-10;
+        errsnd.play();
         $('.v2').css("background-image","url()");
       }
       $('.number').text(score);
@@ -264,11 +272,13 @@ $(function() {
       if(testWordNumber==testWordPic[2]){
         console.log("Good")
         score = score+10;
+        corsnd.play();
         start();
         
       }else{
         console.log("Bad")
         score = score-10;
+        errsnd.play();
         $('.v3').css("background-image","url()");
       }
       $('.number').text(score);
@@ -278,11 +288,13 @@ $(function() {
       if(testWordNumber==testWordPic[3]){
         console.log("Good")
         score = score+10;
+        corsnd.play();
         start();
         
       }else{
         console.log("Bad")
         score = score-10;
+        errsnd.play();
         $('.v4').css("background-image","url()");
       }
       $('.number').text(score);
@@ -292,11 +304,13 @@ $(function() {
       if(testWordNumber==testWordPic[4]){
         console.log("Good")
         score = score+10;
+        corsnd.play();
         start();
         
       }else{
         console.log("Bad")
         score = score-10;
+        errsnd.play();
         $('.v5').css("background-image","url()");
       }
       $('.number').text(score);
@@ -306,11 +320,13 @@ $(function() {
       if(testWordNumber==testWordPic[5]){
         console.log("Good")
         score = score+10;
+        corsnd.play();
         start();
         
       }else{
         console.log("Bad")
         score = score-10;
+        errsnd.play();
         $('.v6').css("background-image","url()");
       }
       $('.number').text(score);
@@ -320,11 +336,13 @@ $(function() {
       if(testWordNumber==testWordPic[6]){
         console.log("Good")
         score = score+10;
+        corsnd.play();
         start();
-       
+        
       }else{
         console.log("Bad")
         score = score-10;
+        errsnd.play();
         $('.v7').css("background-image","url()");
       }
       $('.number').text(score);
@@ -334,11 +352,13 @@ $(function() {
       if(testWordNumber==testWordPic[7]){
         console.log("Good")
         score = score+10;
+        corsnd.play();
         start();
         
       }else{
         console.log("Bad")
         score = score-10;
+        errsnd.play();
         $('.v8').css("background-image","url()");
       }
       $('.number').text(score);
