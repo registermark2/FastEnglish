@@ -139,6 +139,9 @@ $(function() {
     };
 
 // button function
+    var bgcsnd = new Audio("sound/COUNTDOWN TIMER 30 sec.wav");
+    bgcsnd.loop = true; //設定循環播放
+
     function start() {  
         // var test =;
         if(controlStart==0){
@@ -149,11 +152,13 @@ $(function() {
         // var get = randomNumber([1,2,3,4,5,6,7,8,9,10]);
         // console.log("GetValue:"+get);
         // randomNumber(20);
+        bgcsnd.play();
     };
 
     function stop() {
         clearTimeout(timer);
         controlStart=0;
+        bgcsnd.pause();
     };
   
     function restart(){
@@ -175,6 +180,7 @@ $(function() {
 
       // controlStart reset
       controlStart=0;
+      bgcsnd.pause();
     }
   
     function setting(){
@@ -182,6 +188,7 @@ $(function() {
       $('.shadow').toggle(200);
       clearTimeout(timer);
       // console.log('setting stop timer');
+      bgcsnd.pause();
     }
 
   //時間往上加
@@ -248,6 +255,7 @@ $(function() {
         errsnd.play();
         $('.v1').css("background-image","url()");
       }
+      bgcsnd.play();
       $('.number').text(score);
     }
     function checkScore2(){
@@ -265,6 +273,7 @@ $(function() {
         errsnd.play();
         $('.v2').css("background-image","url()");
       }
+      bgcsnd.play();
       $('.number').text(score);
     }
     function checkScore3(){
@@ -281,6 +290,7 @@ $(function() {
         errsnd.play();
         $('.v3').css("background-image","url()");
       }
+      bgcsnd.play();
       $('.number').text(score);
     }
     function checkScore4(){
@@ -297,6 +307,7 @@ $(function() {
         errsnd.play();
         $('.v4').css("background-image","url()");
       }
+      bgcsnd.play();
       $('.number').text(score);
     }
     function checkScore5(){
@@ -313,6 +324,7 @@ $(function() {
         errsnd.play();
         $('.v5').css("background-image","url()");
       }
+      bgcsnd.play();
       $('.number').text(score);
     }
     function checkScore6(){
@@ -329,6 +341,7 @@ $(function() {
         errsnd.play();
         $('.v6').css("background-image","url()");
       }
+      bgcsnd.play();
       $('.number').text(score);
     }
     function checkScore7(){
@@ -345,6 +358,7 @@ $(function() {
         errsnd.play();
         $('.v7').css("background-image","url()");
       }
+      bgcsnd.play();
       $('.number').text(score);
     }
     function checkScore8(){
@@ -361,6 +375,7 @@ $(function() {
         errsnd.play();
         $('.v8').css("background-image","url()");
       }
+      bgcsnd.play();
       $('.number').text(score);
 
     }
