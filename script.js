@@ -17,10 +17,10 @@ $(function() {
       // $(".timecals").css("width",timebarWidth-8);
       var TotalTime = $('.timeInput').val();
       var reduceTime = 100/TotalTime;
-      console.log(reduceTime);
+      // console.log(reduceTime);
       $(".timecals").css("width",value+"%");
       value=value-reduceTime;
-      console.log(value);
+      // console.log(value);
       if (value<0){
         alert("時間到!!!!");
         restart()
@@ -62,14 +62,15 @@ $(function() {
           classNumber = classNumber-1;
           
 ///////////////////////////////
-          count=0;//每次都要歸0不然重複壓會往上跑
-          $.each(Jdata[classNumber], function(index,val) {
-            // console.log('index='+index);
-            count++;
-          }); 
+          // count=0;//每次都要歸0不然重複壓會往上跑
+          
+          // console.log(Object.keys(Jdata[classNumber]).length)
+          // $.each(Jdata[classNumber], function(index,val) {
+          //   count++;
+          // }); 
+          
 
-
-          getArray = randomNumber(count);
+          getArray = randomNumber(Object.keys(Jdata[classNumber]).length);
           console.log("getArray:"+getArray);
 
           // console.log("classNumber:"+classNumber+" "+"getArray:"+getArray[0])
@@ -81,32 +82,43 @@ $(function() {
 
           // post pic
           //for(var i=0;i<count;i++){
-          var s1,s2,s3,s4,s5,s6,s7,s8;
+          // var s1,s2,s3,s4,s5,s6,s7,s8;
             // s1 = "."+Jdata[classNumber][getArray[0]]['path'];
             // s2 = "."+Jdata[classNumber][getArray[1]]['path']
             
-           
+          // for (var i =0 ;i<8;i++){
+          //   console.log(Jdata[classNumber][getArray[i]]['path'])
+          // }
+
           $('.v1').css("background-image","url("+"."+Jdata[classNumber][getArray[0]]['path']+")");
+          console.log(".v1"+Jdata[classNumber][getArray[0]]['path'])
           $('.v2').css("background-image","url("+"."+Jdata[classNumber][getArray[1]]['path']+")");
+          console.log(".v2"+Jdata[classNumber][getArray[1]]['path'])
           $('.v3').css("background-image","url("+"."+Jdata[classNumber][getArray[2]]['path']+")");
+          console.log(".v3"+Jdata[classNumber][getArray[2]]['path'])
           $('.v4').css("background-image","url("+"."+Jdata[classNumber][getArray[3]]['path']+")");
+          console.log(".v4"+Jdata[classNumber][getArray[3]]['path'])
           $('.v5').css("background-image","url("+"."+Jdata[classNumber][getArray[4]]['path']+")");
+          console.log(".v5"+Jdata[classNumber][getArray[4]]['path'])
           $('.v6').css("background-image","url("+"."+Jdata[classNumber][getArray[5]]['path']+")");
+          console.log(".v5"+Jdata[classNumber][getArray[5]]['path'])
           $('.v7').css("background-image","url("+"."+Jdata[classNumber][getArray[6]]['path']+")");
+          console.log(".v7"+Jdata[classNumber][getArray[6]]['path'])
           $('.v8').css("background-image","url("+"."+Jdata[classNumber][getArray[7]]['path']+")");
+          console.log(".v8"+Jdata[classNumber][getArray[7]]['path'])
           //};
 
           // post word
           titleNumber = Math.floor(Math.random() * 8);
           // console.log("testNumber:"+testWordNumber);
           $('.practiceVocal').text(Jdata[classNumber][getArray[titleNumber]]['name']);
-          
+          console.log(Jdata[classNumber][getArray[titleNumber]]['name'])
           // 給globel
           testWordNumber = getArray[titleNumber];
           testWordPic = getArray;
           // 顯示目前比較數字
           console.log("testNumber:"+testWordNumber);
-          console.log("testWordPic"+testWordPic)
+          console.log("testWordPic:"+testWordPic);
 
 
 /////////////////////////////
@@ -179,7 +191,7 @@ $(function() {
       // console.log(getValue);
       getValue++;
       $('.timeInput').val(getValue);   
-      console.log(getValue);
+      // console.log(getValue);
     };
   
   //時間往下扣
@@ -188,7 +200,7 @@ $(function() {
       // console.log(getValue);
       getValue--;
       $('.timeInput').val(getValue);   
-      console.log(getValue);
+      // console.log(getValue);
     };  
   
   
@@ -199,7 +211,7 @@ $(function() {
       getValue++;
       $('.classInput').val(getValue);
       classNumber=getValue;
-      console.log(getValue);
+      // console.log(getValue);
     };
   //課程往下扣
     function classDown(){
@@ -210,8 +222,8 @@ $(function() {
       };
       classNumber=getValue;
       $('.classInput').val(getValue);   
-      console.log(getValue);
-      console.log("classNumber:"+classNumber);
+      // console.log(getValue);
+      // console.log("classNumber:"+classNumber);
     };  
   
 
