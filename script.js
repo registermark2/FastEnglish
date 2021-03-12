@@ -27,40 +27,25 @@ $(function() {
       }
     };
 
-
-
 // check number is diff
-
     function randomNumber(limit){
       var arr =[];
       // 給足夠數量數值到陣列裡面
       for(var i =0;i<limit;i++){
           arr.push(i);
       }
-      console.log("arr content:"+arr);
 
-
-      var result = [ ];
-
-      var ranNum = limit;
-      // 隨機交換
-      for (var i = 0; i < ranNum; i++) {
-
-        var ran = Math.floor(Math.random() * (arr.length - i));
-
-        result.push(arr[ran]);
-
-        arr[ran] = arr[arr.length - i - 1];
-
-      }
-      // console.log("result:"+result);
-      return result;
+      arr.sort(
+        function(){ 
+            return Math.random() - 0.5; 
+        }
+      );
+      return arr;
     }
 
 //radom picture 
     function showPic(){
       $.ajax({
-        
         // url: "data.json",
         url: "data_name_new.json",
         type: "GET",
@@ -72,14 +57,10 @@ $(function() {
           // push number limit and get random array
           var getArray = [];
           // 把classNumber減一，原因是json檔案從0開始，對應不到實際課程名稱
-          
-          
-          
+
           var classNumber = $('.classInput').val(); 
           classNumber = classNumber-1;
           
-
-
 ///////////////////////////////
           count=0;//每次都要歸0不然重複壓會往上跑
           $.each(Jdata[classNumber], function(index,val) {
@@ -99,21 +80,21 @@ $(function() {
 
 
           // post pic
-          for(var i=0;i<count;i++){
+          //for(var i=0;i<count;i++){
             var s1,s2,s3,s4,s5,s6,s7,s8;
             // s1 = "."+Jdata[classNumber][getArray[0]]['path'];
             // s2 = "."+Jdata[classNumber][getArray[1]]['path']
             
            
-            $('.v1').css("background-image","url("+"."+Jdata[classNumber][getArray[0]]['path']+")");
-            $('.v2').css("background-image","url("+"."+Jdata[classNumber][getArray[1]]['path']+")");
-            $('.v3').css("background-image","url("+"."+Jdata[classNumber][getArray[2]]['path']+")");
-            $('.v4').css("background-image","url("+"."+Jdata[classNumber][getArray[3]]['path']+")");
-            $('.v5').css("background-image","url("+"."+Jdata[classNumber][getArray[4]]['path']+")");
-            $('.v6').css("background-image","url("+"."+Jdata[classNumber][getArray[5]]['path']+")");
-            $('.v7').css("background-image","url("+"."+Jdata[classNumber][getArray[6]]['path']+")");
-            $('.v8').css("background-image","url("+"."+Jdata[classNumber][getArray[7]]['path']+")");
-          };
+          $('.v1').css("background-image","url("+"."+Jdata[classNumber][getArray[0]]['path']+")");
+          $('.v2').css("background-image","url("+"."+Jdata[classNumber][getArray[1]]['path']+")");
+          $('.v3').css("background-image","url("+"."+Jdata[classNumber][getArray[2]]['path']+")");
+          $('.v4').css("background-image","url("+"."+Jdata[classNumber][getArray[3]]['path']+")");
+          $('.v5').css("background-image","url("+"."+Jdata[classNumber][getArray[4]]['path']+")");
+          $('.v6').css("background-image","url("+"."+Jdata[classNumber][getArray[5]]['path']+")");
+          $('.v7').css("background-image","url("+"."+Jdata[classNumber][getArray[6]]['path']+")");
+          $('.v8').css("background-image","url("+"."+Jdata[classNumber][getArray[7]]['path']+")");
+          //};
 
           // post word
           titleNumber = Math.floor(Math.random() * 8);
