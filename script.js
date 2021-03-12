@@ -81,7 +81,7 @@ $(function() {
 
           // post pic
           //for(var i=0;i<count;i++){
-            var s1,s2,s3,s4,s5,s6,s7,s8;
+          var s1,s2,s3,s4,s5,s6,s7,s8;
             // s1 = "."+Jdata[classNumber][getArray[0]]['path'];
             // s2 = "."+Jdata[classNumber][getArray[1]]['path']
             
